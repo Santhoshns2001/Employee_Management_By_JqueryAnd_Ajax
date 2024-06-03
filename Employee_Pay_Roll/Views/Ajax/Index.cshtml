@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<button class="btn btn-sm btn-primary m-2 " id="btnAddEmployee">Add Employee</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>EmployeeId</th>
+            <th>EmployeeName</th>
+            <th>EmployeeAge</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>PhoneNumber</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>Operation</th>
+
+        </tr>
+    </thead>
+    <tbody class="text-center" id="table_data"></tbody>
+</table>
+
+<div class="modal fade modal" id="EmployeeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-info modal-title">Add Employee</h1>
+               <button class="close text-danger" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <form method="post">
+                <div class="form-group mt-4">
+                    @* <label>EmployeeName</label> *@
+                    <input type="text" placeholder="Enter Name" class="form-control" id="EmployeeName" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>EmployeeAge</label> *@
+                    <input type="number" placeholder="Employee Age" class="form-control" id="EmployeeAge" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>Address</label> *@
+                    <input type="text" placeholder="Address" class="form-control" id="Address" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>City</label> *@
+                    <input type="text" placeholder="City" class="form-control" id="City" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>PhoneNumber</label> *@
+                    <input type="number" placeholder="PhoneNumber" class="form-control" id="PhoneNumber" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>Designation</label> *@
+                    <input type="text" placeholder="Designation" class="form-control" id="Designation" autocomplete="off" />
+                </div>
+                <div class="form-group mt-4">
+                    @* <label>Salary</label> *@
+                    <input type="number" placeholder="Salary" class="form-control" id="Salary" autocomplete="off" />
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="AddEmployee();" id="AddEmployee">Save</button>
+                <button class="btn btn-danger btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* <a href="~/lib/jquery/dist/jquery.min.map">~/lib/jquery/dist/jquery.min.map</a> *@
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/custom.js"></script>
