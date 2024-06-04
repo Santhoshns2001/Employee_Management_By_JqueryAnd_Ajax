@@ -27,11 +27,15 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="text-info modal-title">Add Employee</h1>
-               <button class="close text-danger" data-dismiss="modal">&times;</button>
+                <h1 class="text-info modal-title" id="employeeHeading">Add Employee</h1>
+                <button class="close text-danger" onclick="HideModalPopUp()" data-animationdata-dismiss="modal">&times;</button>
             </div>
-            <div class="modal-body"></div>
+            <div class="modal-body">
             <form method="post">
+                <div class="form-group mt-4" id="empId">
+                    @* <label>EmployeeId</label> *@
+                    <input type="number" placeholder="Enter Id" class="form-control" id="EmployeeId" disabled="disabled" />
+                </div>
                 <div class="form-group mt-4">
                     @* <label>EmployeeName</label> *@
                     <input type="text" placeholder="Enter Name" class="form-control" id="EmployeeName" autocomplete="off" />
@@ -58,12 +62,14 @@
                 </div>
                 <div class="form-group mt-4">
                     @* <label>Salary</label> *@
-                    <input type="number" placeholder="Salary" class="form-control" id="Salary" autocomplete="off" />
+                    <input type="text" placeholder="Salary" class="form-control" id="Salary" autocomplete="off" />
                 </div>
             </form>
+            </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" onclick="AddEmployee();" id="AddEmployee">Save</button>
-                <button class="btn btn-danger btn-default" data-dismiss="modal">Close</button>
+                <button class="btn btn-warning" onclick="UpdateEmployee();" style="display:none" id="btnUpdate">Update</button>
+                <button class="btn btn-danger btn-default" onclick="HideModalPopUp()" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

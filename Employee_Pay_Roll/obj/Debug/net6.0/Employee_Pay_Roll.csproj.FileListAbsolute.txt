@@ -244,3 +244,4 @@ C:\Users\Admin\source\repos\Employee_Pay_Roll\Employee_Pay_Roll\bin\Debug\net6.0
 C:\Users\Admin\source\repos\Employee_Pay_Roll\Employee_Pay_Roll\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Admin\source\repos\Employee_Pay_Roll\Employee_Pay_Roll\obj\Debug\net6.0\Employee_Pay_Roll.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\Employee_Pay_Roll\Employee_Pay_Roll\obj\Debug\net6.0\Employee.4CEA6B65.Up2Date
+C:\Users\Admin\source\repos\Employee_Pay_Roll\Employee_Pay_Roll\obj\Debug\net6.0\Employee_Pay_Roll.sourcelink.json

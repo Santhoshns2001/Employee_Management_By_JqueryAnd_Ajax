@@ -54,6 +54,20 @@ namespace Employee_Pay_Roll.Controllers.Ajax
             context.SaveChanges();
             return new JsonResult("data deleted");
         }
+        [HttpGet]
+        public JsonResult Edit(int employeeId)
+        {
+            var data=context.Employees.Where(e=> e.EmployeeId==employeeId).SingleOrDefault();
+            return new JsonResult(data);
 
+        }
+
+        [HttpPost]
+        public JsonResult UpdateEmployee(EmployeeModel employee)
+        {
+            context.Employees.Update(employee);
+            context.SaveChanges();
+            return new JsonResult("Record updatated");
+        }
     }
 }
